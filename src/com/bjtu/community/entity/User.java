@@ -33,6 +33,9 @@ public class User {
     @Column("praise")
     private Integer praise;
 
+    @Column("token")
+    private String token;
+
     public Integer getId() {
         return id;
     }
@@ -103,5 +106,13 @@ public class User {
 
     public void setPraise(Integer praise) {
         this.praise = praise;
+    }
+
+    public String getToken() {
+        return token;
+    }
+
+    public void setToken(String token) {
+        this.token = token;
     }
 }
