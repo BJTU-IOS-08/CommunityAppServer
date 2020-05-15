@@ -16,7 +16,7 @@ public class MainSetup implements Setup {
     public void init(NutConfig nutConfig) {
         MainSetup.ioc = nutConfig.getIoc();
         Dao dao = ioc.get(Dao.class);
-        Daos.createTablesInPackage(dao, "com.ljn.profile", false);
+        Daos.createTablesInPackage(dao, "com.bjtu.community", false);
     }
 
     public void destroy(NutConfig nutConfig) {

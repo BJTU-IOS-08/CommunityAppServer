@@ -6,9 +6,9 @@ var ioc = {
                 depose : 'close'
             },
             fields : {
-                url : "jdbc:mysql://localhost:3306/community",
+                url : "jdbc:mysql://192.168.137.1:3306/community",
                 username : "root",
-                password : "88888888Aa",
+                password : "",
                 testWhileIdle : true, 
                 validationQuery : "select 1" ,
                 maxActive : 100
