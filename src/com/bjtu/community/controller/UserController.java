@@ -42,4 +42,60 @@ public class UserController {
         }
         return re;
     }
+
+    @Ok("json")
+    @Fail("http:500")
+    @At("/user/profile")
+    @POST
+    public Object getProfile(
+            @Param("uid") String uid,
+            @Param("token") String token) {
+
+        NutMap re = new NutMap();
+        try {
+            User u = dao.fetch(User.class, Cnd.where("user_id", "=", uid).and("token", "=", token));
+            if (u != null) {
+                u.setToken(MyUtils.getRandomKey());
+                dao.update(u);
+                re.put("status", 0);
+                re.put("msg", "OK");
+                re.put("user", u);
+            } else {
+                re.put("status", 1);
+                re.put("msg", "error");
+            }
+        } catch (Throwable e) {
+            re.put("status", 1);
+            re.put("msg", "error");
+        }
+        return re;
+    }
+
+    @Ok("json")
+    @Fail("http:500")
+    @At("/user/modify_profile")
+    @POST
+    public Object modifyProfile(
+            @Param("uid") String uid,
+            @Param("token") String token) {
+
+        NutMap re = new NutMap();
+        try {
+            User u = dao.fetch(User.class, Cnd.where("user_id", "=", uid).and("token", "=", token));
+            if (u != null) {
+                u.setToken(MyUtils.getRandomKey());
+                dao.update(u);
+                re.put("status", 0);
+                re.put("msg", "OK");
+                re.put("user", u);
+            } else {
+                re.put("status", 1);
+                re.put("msg", "error");
+            }
+        } catch (Throwable e) {
+            re.put("status", 1);
+            re.put("msg", "error");
+        }
+        return re;
+    }
 }

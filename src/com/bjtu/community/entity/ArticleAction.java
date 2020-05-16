@@ -18,6 +18,9 @@ public class ArticleAction {
     @Column("uid")
     private String uid;
 
+    @Column("pid")
+    private String pid;
+
     public Integer getId() {
         return id;
     }
@@ -48,5 +51,13 @@ public class ArticleAction {
 
     public void setUid(String uid) {
         this.uid = uid;
+    }
+
+    public String getPid() {
+        return pid;
+    }
+
+    public void setPid(String pid) {
+        this.pid = pid;
     }
 }
