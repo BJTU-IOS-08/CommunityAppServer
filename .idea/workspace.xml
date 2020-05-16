@@ -7,28 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="41f31493-45f2-4aa6-ba85-01c11b0b6eb9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/bjtu/community/controller/ArticleController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/bjtu/community/entity/VerifyCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/bjtu/community/utils/DateUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/bjtu/community/utils/GetCheckCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/bjtu/community/utils/GetPhoto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/bjtu/community/utils/MD5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/bjtu/community/utils/Message.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/bjtu/community/utils/SecretKey.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/bjtu/community/utils/UploadFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/CommunityAppServer_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/CommunityAppServer_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CommunityAppServer_war_exploded/WEB-INF/classes/com/bjtu/community/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CommunityAppServer_war_exploded/WEB-INF/classes/com/bjtu/community/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CommunityAppServer_war_exploded/WEB-INF/classes/com/bjtu/community/entity/ArticleAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CommunityAppServer_war_exploded/WEB-INF/classes/com/bjtu/community/entity/ArticleAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CommunityAppServer_war_exploded/WEB-INF/classes/ioc/dao.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CommunityAppServer_war_exploded/WEB-INF/classes/ioc/dao.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CommunityAppServer/com/bjtu/community/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CommunityAppServer/com/bjtu/community/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CommunityAppServer/com/bjtu/community/entity/ArticleAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CommunityAppServer/com/bjtu/community/entity/ArticleAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CommunityAppServer/ioc/dao.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CommunityAppServer/ioc/dao.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/bjtu/community/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bjtu/community/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/bjtu/community/entity/ArticleAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bjtu/community/entity/ArticleAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ioc/dao.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ioc/dao.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -234,7 +214,7 @@
       <workItem from="1589172594033" duration="32000" />
       <workItem from="1589441273431" duration="790000" />
       <workItem from="1589530687514" duration="4483000" />
-      <workItem from="1589608093327" duration="169000" />
+      <workItem from="1589608093327" duration="386000" />
     </task>
     <servers />
   </component>

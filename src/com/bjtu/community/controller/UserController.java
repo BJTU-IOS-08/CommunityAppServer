@@ -1,6 +1,8 @@
 package com.bjtu.community.controller;
 
 import com.bjtu.community.entity.User;
+import com.bjtu.community.entity.VerifyCode;
+import com.bjtu.community.utils.Message;
 import com.bjtu.community.utils.MyUtils;
 import org.nutz.dao.Cnd;
 import org.nutz.dao.Dao;
@@ -92,6 +94,28 @@ public class UserController {
                 re.put("status", 1);
                 re.put("msg", "error");
             }
+        } catch (Throwable e) {
+            re.put("status", 1);
+            re.put("msg", "error");
+        }
+        return re;
+    }
+
+    @Ok("json")
+    @Fail("http:500")
+    @At("/user/verify")
+    @POST
+    public Object modifyProfile(
+            @Param("phone") String phone) {
+
+        NutMap re = new NutMap();
+        try {
+            VerifyCode code = new VerifyCode();
+            code.setPhoneNumber(phone);
+            code.setCode(new Message().mSsendMessage(phone));
+            dao.insert(code);
+            re.put("status", 0);
+            re.put("msg", "OK");
         } catch (Throwable e) {
             re.put("status", 1);
             re.put("msg", "error");
